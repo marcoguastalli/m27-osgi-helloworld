@@ -4,8 +4,8 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-import com.bw.osgi.provider.able.HelloWorldService;
-import com.bw.osgi.provider.impl.HelloWorldServiceImpl;
+import net.marco27.osgi.helloworld.HelloWorldService;
+import net.marco27.osgi.helloworld.HelloWorldServiceImpl;
 
 public class ProviderActivator implements BundleActivator {
     private ServiceRegistration registration;

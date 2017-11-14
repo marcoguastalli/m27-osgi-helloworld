@@ -1,10 +1,14 @@
 package net.marco27.osgi.helloworld;
 
-import com.bw.osgi.provider.able.HelloWorldService;
+import org.apache.felix.scr.annotations.Component;
+import org.apache.felix.scr.annotations.Service;
 
+@Component
+@Service(value = HelloWorldService.class)
 public class HelloWorldServiceImpl implements HelloWorldService {
+
     @Override
-    public void hello(){
-        System.out.println("Hello World !");
+    public void helloWorld() {
+        System.out.println("Hello World!");
     }
 }
