@@ -4,8 +4,8 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-import net.marco27.osgi.helloworld.HelloWorldService;
-import net.marco27.osgi.helloworld.HelloWorldServiceImpl;
+import net.marco27.osgi.helloworld.HelloWorldOsgiService;
+import net.marco27.osgi.helloworld.HelloWorldOsgiServiceImpl;
 
 public class ProviderActivator implements BundleActivator {
     private ServiceRegistration registration;
@@ -13,8 +13,8 @@ public class ProviderActivator implements BundleActivator {
     @Override
     public void start(BundleContext bundleContext) throws Exception {
         registration = bundleContext.registerService(
-                HelloWorldService.class.getName(),
-                new HelloWorldServiceImpl(),
+                HelloWorldOsgiService.class.getName(),
+                new HelloWorldOsgiServiceImpl(),
                 null);
     }
 

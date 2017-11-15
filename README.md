@@ -11,3 +11,9 @@ Install/Update..
 
 http://localhost:6200/system/console/bundles
     Filter by m27OSGiHelloWorld
+
+http://localhost:6200/system/console/components
+    Search for net.marco27.osgi.helloworld.HelloWorldOsgiServiceImpl
+
+http://localhost:6200/system/console/services
+    Search for net.marco27.osgi.helloworld.HelloWorldOsgiService
